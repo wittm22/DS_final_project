@@ -13,3 +13,9 @@ mens_winners_1897_to_1923 = mens_winners.head(27)
 sorted_mens_1897_to_1923 = mens_winners_1897_to_1923.sort_values(by = 'Time', ascending = True)
 top5_mens_1897_to_1923 = sorted_mens_1897_to_1923.head(5)
 print(top5_mens_1897_to_1923)
+
+#prints top 5 men's finishing times from 1924 to present
+mens_winners_1924_to_present = mens_winners.head(127)
+sorted_mens_1924_to_present = mens_winners_1924_to_present.sort_values(by = 'Time', ascending = True)
+top5_mens_1924_to_present = sorted_mens_1924_to_present.head(5)
+print(top5_mens_1924_to_present)
