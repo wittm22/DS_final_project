@@ -30,12 +30,6 @@ I want to determine the average finishing time for the years when the Boston Mar
 
 I want to analyze which five years had the top finishing times for both the men's marathon and women's marathon. I want to see if there is any overlap in the years with some of the fastest times. 
 
-#prints top 5 finishing men's times from 1897 to 1923 (when marathon distance was 24.5 miles)
-mens_winners_1897_to_1923 = mens_winners.head(27)
-sorted_mens_1897_to_1923 = mens_winners_1897_to_1923.sort_values(by = 'Time', ascending = True)
-top5_mens_1897_to_1923 = sorted_mens_1897_to_1923.head(5)
-print(top5_mens_1897_to_1923)
-
 Methodology:
 In order to analyze the datasets, I will be using python code in Juptyer Notebook. 
 Some tools I will be using to create visualizations based off the dataset are NumPy, Seaborn, Pandas, and Matplotlib
