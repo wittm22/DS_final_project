@@ -1,0 +1,5 @@
+#prints top 5 finishing men's times from 1897 to 1923 (when marathon distance was 24.5 miles)
+mens_winners_1897_to_1923 = mens_winners.head(27)
+sorted_mens_1897_to_1923 = mens_winners_1897_to_1923.sort_values(by = 'Time', ascending = True)
+top5_mens_1897_to_1923 = sorted_mens_1897_to_1923.head(5)
+print(top5_mens_1897_to_1923)
