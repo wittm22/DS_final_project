@@ -23,7 +23,13 @@ Runners travel from all around the world to participate in this prestigious race
 I want to see the likelihood of someone winning the Boston marathon more than once.
 
 5. Mean difference in finishing time after distance change
+
 I want to determine the average finishing time for the years when the Boston Marathon was 24.5 miles long (1897 - 1923) compared to when the Boston Marathon was 26.2 miles long (1924 - present). 
+
+6. What 5 years resulted in the fastest fininshing times for men and women?
+
+I want to analyze which five years had the top finishing times for both the men's marathon and women's marathon. I want to see if there is any overlap in the years with some of the fastest times. 
+
 
 
 Methodology:
