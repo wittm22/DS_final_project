@@ -1,3 +1,13 @@
+import pandas as pd
+import numpy as np
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+%matplotlib inline
+import seaborn; seaborn.set()  # for plot styling
+
+mens_winners = pd.read_csv('Mens_Boston_Marathon_Winners.csv')
+womens_winners = pd.read_csv('Womens_Boston_Marathon_Winners.csv')
+
 #prints top 5 finishing men's times from 1897 to 1923 (when marathon distance was 24.5 miles)
 mens_winners_1897_to_1923 = mens_winners.head(27)
 sorted_mens_1897_to_1923 = mens_winners_1897_to_1923.sort_values(by = 'Time', ascending = True)
