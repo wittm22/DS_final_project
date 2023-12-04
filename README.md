@@ -7,7 +7,7 @@ By analyzing the datasets, I wanted to answer the following research questions:
 
 1. What is the average time distance between men and women?
 
-The men's winner has always been faster that the women's winner, so I wanted to see the average distance in winning times for the Boston Marathon. 
+The men's winner has always been faster that the women's winner for every Boston Marathon, so I wanted to see the average difference in winning times for the Boston Marathon. 
 
 2. Has marathon times overall decreased over time?
 
