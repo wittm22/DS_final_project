@@ -29,7 +29,21 @@ plt.ylabel('Finish Time (Hours)')
 plt.title("Men's Boston Marathon Winning Finishing Times (1897-2023)")
 plt.show()
 
+#prints scatterplot with line of best fit
+from sklearn.linear_model import LinearRegression
+mens_model = LinearRegression(fit_intercept = True)
+mens_model.fit(mens_year[:, np.newaxis], mens_time)
+mens_xfit = np.linspace(1897, 2023)
+mens_yfit = mens_model.predict(mens_xfit[:, np.newaxis])
 
+plt.scatter(mens_year, mens_time)
+plt.plot(mens_xfit, mens_yfit)
+plt.xlabel("Year")
+plt.ylabel("Finish Time (Hours)")
+plt.title("Men's Boston Marathon Winners Finishing Times (1897 - 2023)")
 
+print("Model slope: ", mens_model.coef_[0], "hours")
+print("Model intercept: ", mens_model.intercept_, "hours")
+print("Line of Best Fit Equation: y =", mens_model.coef_[0], "* x +", mens_model.intercept_)
 
 
