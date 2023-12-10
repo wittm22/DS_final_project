@@ -1,7 +1,17 @@
 # DS_final_project
 
 ## Boston Marathon Winners (Men and Women)
+Why was the project undertaken? What was the research question, the tested hypothesis or the purpose of the research?	
 The Boston Marathon, the world's oldest marathon, is a prominent race that runners from all over the world travel afar to compete in. This 26.2 mile race started in 1897 and has taken place almost every year since then. I found datasets on Kaggle which contain the male and female winners from each year's Boston Marathon. The datasets include the name of the winner, they year in which he/she won, the country he/she is from, his/her finishing time, and the distance of the race in both miles and kilometers. 
+
+What is the source of the dataset? Characteristics of data? Any munging, imputation, or feature engineering?	
+
+The data can be found on the Boston Athletic Association's website. I removed the rows for 1918 and 2020. In 1918, the Boston Marathon was a relay race, so there was no individual winner. The Boston Marathon was cancelled in 2020. 
+
+
+
+
+The Boston Marathon, the world's oldest marathon, is a prominent race that runners from all over the world travel afar to compete in. This 26.2 mile race started in 1897 and has taken place almost every year since then. 
 
 By analyzing the datasets, I wanted to answer the following research questions:
 
