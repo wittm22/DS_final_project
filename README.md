@@ -37,4 +37,5 @@ Some tools I will be using to create visualizations based off the dataset are Nu
 datasets found on kaggle: https://www.kaggle.com/datasets/zhikchen/boston-marathon-winners-men-and-women
 
 
+I would like to determine the overall trend in marathon times from the first marathon in 1897 to the present time. I will use a linear regression model to figure this out. 
 
