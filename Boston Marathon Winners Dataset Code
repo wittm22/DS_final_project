@@ -3,19 +3,27 @@ import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 %matplotlib inline
-import seaborn; seaborn.set()  # for plot styling
+import seaborn; seaborn.set()
 
-mens_winners = pd.read_csv('Mens_Boston_Marathon_Winners.csv')
-womens_winners = pd.read_csv('Womens_Boston_Marathon_Winners.csv')
+#converts 'string' value of men's marathon winning times into 'timedelta' objects
+from datetime import datetime, timedelta
 
-#prints top 5 finishing men's times from 1897 to 1923 (when marathon distance was 24.5 miles)
-mens_winners_1897_to_1923 = mens_winners.head(27)
-sorted_mens_1897_to_1923 = mens_winners_1897_to_1923.sort_values(by = 'Time', ascending = True)
-top5_mens_1897_to_1923 = sorted_mens_1897_to_1923.head(5)
-print(top5_mens_1897_to_1923)
+def convert_time(s):
+    h, m, s = map(int, s.split(':'))
+    return timedelta(hours=h, minutes=m, seconds=s)
 
-#prints top 5 men's finishing times from 1924 to present
-mens_winners_1924_to_present = mens_winners.head(127)
-sorted_mens_1924_to_present = mens_winners_1924_to_present.sort_values(by = 'Time', ascending = True)
-top5_mens_1924_to_present = sorted_mens_1924_to_present.head(5)
-print(top5_mens_1924_to_present)
+mens_data = pd.read_csv('Mens_Boston_Marathon_Winners.csv',
+                   converters={'Time':convert_time})
+mens_data.head() #prints attributes of first five rows
+
+#converts time into an 'int' object. 'Time_hours' represents the men's finishing times in hours.
+mens_data['Time_hours'] = mens_data['Time'].astype(int) / 1E9 * (1/3600)
+mens_data.head()
+
+mens_year = mens_data['Year']
+mens_time = mens_data['Time_hours']
+
+plt.scatter(mens_year, mens_time); #scatterplot of men's marathon times from 1897 to 2022
+plt.show()
+
+
