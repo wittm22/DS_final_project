@@ -24,6 +24,12 @@ mens_year = mens_data['Year']
 mens_time = mens_data['Time_hours']
 
 plt.scatter(mens_year, mens_time); #scatterplot of men's marathon times from 1897 to 2022
+plt.xlabel('Year')
+plt.ylabel('Finish Time (Hours)')
+plt.title("Men's Boston Marathon Winning Finishing Times (1897-2023)")
 plt.show()
+
+
+
 
 
